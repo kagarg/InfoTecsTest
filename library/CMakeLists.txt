@@ -6,7 +6,6 @@ project(MyLibrary LANGUAGES CXX)
 add_library(mylib SHARED library.cpp)
 
 # Устанавливаем макрос для экспорта функций (LIBRARY_EXPORT),
-# чтобы на Windows были корректные __declspec(dllexport).
 target_compile_definitions(mylib PRIVATE LIBRARY_EXPORT)
 
 # Заголовочный файл
